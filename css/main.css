@@ -1,0 +1,13 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import "first-section.css";
+@import "services.css";
+
+/* body {
+  color: #eeeeee;
+} */
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
