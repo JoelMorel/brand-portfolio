@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import "first-section.css";
 @import "services.css";
+@import "portfolio-section.css";
+@import "experience-section.css";
+@import "blog-section.css";
 
 /* body {
   color: #eeeeee;

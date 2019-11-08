@@ -1,0 +1,120 @@
+#portfolio {
+  padding: 80px 15px;
+}
+
+#portfolio .title {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#portfolio .background-square {
+  background: #ffeded;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 25px;
+}
+
+#portfolio .title h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+#portfolio .portfolio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+#portfolio .portfolio-container .project {
+  background: red;
+  display: block;
+  padding: 40px;
+  transition: all 0.4s ease-in-out;
+
+  width: 100%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-container .project:hover {
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.49);
+}
+
+#portfolio .portfolio-container .title {
+  color: black;
+  position: relative;
+}
+
+#portfolio .portfolio-container .project .source-code {
+  color: black;
+  position: relative;
+}
+
+#portfolio .portfolio-container .project.one {
+  background: url("https://cdn.dribbble.com/users/517584/screenshots/7994421/media/400e0acd9cacd671a584a49ee566ac4c.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#portfolio .portfolio-container .project.two {
+  background: url("https://cdn.dribbble.com/users/1259559/screenshots/8064558/media/314b6726dac79ebae5188583748180cf.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#portfolio .portfolio-container .project.three {
+  background: url("https://cdn.dribbble.com/users/1958763/screenshots/8065787/media/a9bd4f5c814e24938c04b798245ccf75.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+#portfolio .portfolio-container .project.four {
+  background: url("https://cdn.dribbble.com/users/2697985/screenshots/7970210/media/27b954dc29681a9260e82d41f200ba7d.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#portfolio .portfolio-container .project.five {
+  background: url("https://cdn.dribbble.com/users/1619633/screenshots/8062684/media/45f03592b5f29bba171022604617afa8.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#portfolio .portfolio-container .project.six {
+  background: url("https://cdn.dribbble.com/users/3872218/screenshots/8065061/media/6382b72a9432807ba192d8b8a4021552.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
