@@ -13,13 +13,14 @@
 }
 
 #top .info .blue-square {
-  border: 20px solid #055688;
+  border: 18px solid #055688;
   width: 400px;
   height: 400px;
   position: absolute;
   z-index: 0;
   top: -70%;
-  left: -60%;
+  left: -52%;
+  opacity: 80%;
 }
 
 #top .info h1 {
@@ -57,7 +58,7 @@
 }
 
 #top .home-img .background-img {
-  background: url("../img/home-shot.jpg");
+  background: url("../../img/home-shot.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,4 +66,34 @@
   max-width: 500px;
   height: 800px;
   margin: 0 auto;
+}
+
+/* Mobile code starts here */
+
+@media only screen and (max-width: 960px) {
+  #top .container {
+    padding: 0 0 80px;
+  }
+
+  #top .info .blue-square {
+    display: initial;
+  }
+
+  #top .home-img .background-img {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #top .container {
+    padding: 0 0 80px;
+  }
+
+  #top .info .blue-square {
+    display: none;
+  }
+
+  #top .home-img .background-img {
+    height: 100vh;
+  }
 }

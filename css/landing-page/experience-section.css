@@ -133,3 +133,50 @@
   text-transform: capitalize;
   line-height: 1.5;
 }
+
+/* Mobile code starts here */
+
+@media only screen and (max-width: 960px) {
+  #experience .experience-container .large-icons {
+    position: relative;
+    top: -25px;
+  }
+  #experience .experience-container .large-icons .square-icon {
+    border: 20px solid #52b8ff;
+    padding-bottom: 5px;
+    display: inline-block;
+    position: relative;
+    top: 122px;
+    left: 48px;
+  }
+  #experience .experience-container .large-icons .circle-icon {
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    top: 130px;
+    left: 48px;
+  }
+  #experience .experience-container .large-icons .triangle-icon {
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    top: 130px;
+    left: 8px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #experience .experience-container {
+    grid-template-columns: none;
+  }
+  #experience .experience-container .large-icons {
+    display: none;
+  }
+  #experience .title-container .large-title {
+    font-size: 2.5rem;
+  }
+
+  #experience .experience-container .info .info-box h4 {
+    font-size: 1rem;
+  }
+}

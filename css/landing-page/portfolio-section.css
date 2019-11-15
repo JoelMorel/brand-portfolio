@@ -38,11 +38,9 @@
 }
 
 #portfolio .portfolio-container .project {
-  background: red;
   display: block;
   padding: 40px;
   transition: all 0.4s ease-in-out;
-
   width: 100%;
   margin-bottom: 1rem;
   overflow: hidden;
@@ -55,14 +53,19 @@
   box-shadow: 0px 50px 50px 0px rgba(0, 0, 0, 0.49);
 }
 
-#portfolio .portfolio-container .title {
-  color: black;
+#portfolio .portfolio-container .title h3 {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
   position: relative;
+  transform: translate3d(0, 150px, 0);
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
 }
 
-#portfolio .portfolio-container .project .source-code {
-  color: black;
-  position: relative;
+#portfolio .portfolio-container .title:hover h3 {
+  transform: translate3d(0, -30px, 0);
+  transition: all 0.4s ease-in-out;
 }
 
 #portfolio .portfolio-container .project.one {
@@ -117,4 +120,77 @@
   background-repeat: no-repeat;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+}
+
+/* Mobile code starts here */
+
+@media only screen and (max-width: 960px) {
+  #portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  #portfolio .portfolio-container .project.one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  #portfolio .portfolio-container .project.two {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+  }
+
+  #portfolio .portfolio-container .project.project.three {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  #portfolio .portfolio-container .project.project.four {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  #portfolio .portfolio-container .project.project.five {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  #portfolio .portfolio-container .project.project.six {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #portfolio .portfolio-container .project.one {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  #portfolio .portfolio-container .project.two {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #portfolio .portfolio-container .project.project.three {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #portfolio .portfolio-container .project.project.four {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+  }
+
+  #portfolio .portfolio-container .project.project.five {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+  }
+
+  #portfolio .portfolio-container .project.project.six {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+  }
 }
